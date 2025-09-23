@@ -1,0 +1,9 @@
+module top_module ( input clk, input d, output q );
+
+    reg q0,q1;
+    
+    my_dff U0(clk,d,q0);
+    my_dff U1(clk,q0,q1);
+    my_dff U2(clk,q1,q);
+    
+endmodule
